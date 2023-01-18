@@ -20,9 +20,6 @@ using MenuBarouch;
 #if APPADVISORY_LEADERBOARD
 using AppAdvisory.social;
 #endif
-#if APPADVISORY_ADS
-using AppAdvisory.Ads;
-#endif
 
 namespace AppAdvisory.MathGame
 {
@@ -699,13 +696,13 @@ namespace AppAdvisory.MathGame
 			#if UNITY_EDITOR
 			print("count = " + count + " > numberOfPlayToShowINterstitial = " + numberOfPlayToShowInterstitial);
 			#endif
-			if(AdsManager.instance.IsReadyInterstitial())
+			if(HLIronSourceAdapter.instance.IsInterstitialReady())
 			{
 			#if UNITY_EDITOR
 				print("AdsManager.instance.IsReadyInterstitial() == true ----> SO ====> set count = 0 AND show interstial");
 			#endif
 				PlayerPrefs.SetInt("GAMEOVER_COUNT",0);
-				AdsManager.instance.ShowInterstitial();
+				HLIronSourceAdapter.instance.ShowIniterstial();
 			}
 			else
 			{

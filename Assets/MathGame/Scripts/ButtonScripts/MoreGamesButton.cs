@@ -13,9 +13,6 @@
 using UnityEngine;
 using System.Collections;
 
-#if APPADVISORY_ADS
-using AppAdvisory.Ads;
-#endif
 
 namespace AppAdvisory.MathGame
 {
@@ -26,10 +23,8 @@ namespace AppAdvisory.MathGame
 		override public void OnClicked()
 		{
 			print ("OnClicked : " + gameObject.name);
-			#if APPADVISORY_ADS
-			AdsManager.instance.ShowRewardedVideo ((bool success) => {
-			print("add your own code here if you want to offer something to the player");
-			});
+#if APPADVISORY_ADS
+			HLIronSourceAdapter.instance.ShowVideoReward();
 			#endif
 		}
 	}
