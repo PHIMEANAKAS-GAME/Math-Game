@@ -451,6 +451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AdsTestCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6998172083081053950, guid: 477d6f25ceeb74afbb2bce060c543206,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9119041890048623227, guid: 477d6f25ceeb74afbb2bce060c543206,
         type: 3}
       propertyPath: btAds
@@ -890,6 +895,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 22426804, guid: 078dbafbc14044a29be609e9b75c7b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -62.5
+      objectReference: {fileID: 0}
     - target: {fileID: 22430908, guid: 078dbafbc14044a29be609e9b75c7b1f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1221,7 +1230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1417610002
 RectTransform:
   m_ObjectHideFlags: 0
